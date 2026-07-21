@@ -1,0 +1,946 @@
+<source src="Depoimento Kenko Light.mp4#t=1.0" type="video/mp4"><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colchão Magnético Kenko Light - Distribuidor Autorizado</title>
+    <style>
+        :root {
+            --primary: #0f3b6a;
+            --primary-dark: #0a2540;
+            --secondary: #d4af37;
+            --accent: #25d366;
+            --accent-hover: #1eb954;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --light-gray: #e2e8f0;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --radius: 12px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            color: var(--dark);
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: var(--primary-dark);
+            color: #ffffff;
+            padding: 8px 5%;
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .top-bar-info {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .top-bar-badge {
+            background-color: var(--secondary);
+            color: var(--primary-dark);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+
+        /* Header */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span {
+            color: var(--secondary);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        .btn-header {
+            background-color: var(--accent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .btn-header:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #0f3b6a 0%, #1e528e 100%);
+            color: white;
+            padding: 60px 20px 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-tag {
+            display: inline-block;
+            background: rgba(212, 175, 55, 0.2);
+            border: 1px solid var(--secondary);
+            color: var(--secondary);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 30px;
+        }
+
+        .hero-feature-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+        }
+
+        .check-icon {
+            width: 22px;
+            height: 22px;
+            background: var(--secondary);
+            color: var(--primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+            flex-shrink: 0;
+        }
+
+        .hero-ctas {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: transform 0.2s;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .btn-secondary:hover {
+            background-color: white;
+            color: var(--primary);
+        }
+
+        /* Hero Video Box (#1) */
+        .hero-video-box {
+            position: relative;
+            background: #000;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-video-box video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--radius);
+        }
+
+        /* Guarantee Strip */
+        .strip {
+            background-color: var(--light);
+            border-bottom: 1px solid var(--light-gray);
+            padding: 25px 20px;
+        }
+
+        .strip-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .strip-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .strip-icon {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+
+        .strip-title {
+            font-weight: bold;
+            font-size: 0.95rem;
+            color: var(--dark);
+        }
+
+        .strip-desc {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        /* Section Commons */
+        section {
+            padding: 70px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 800;
+        }
+
+        .section-title p {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
+        /* Video Section (#2) */
+        .video-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--dark);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--radius);
+        }
+
+        /* Products Grid */
+        .products-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 220px;
+            background: #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray);
+            font-weight: 600;
+            position: relative;
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background-color: var(--secondary);
+            color: var(--primary-dark);
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 0.75rem;
+        }
+
+        .product-body {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .product-specs {
+            background: var(--light);
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 0.85rem;
+            color: var(--dark);
+        }
+
+        .btn-card {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .btn-card:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* Comparison Section */
+        .comparison-bg {
+            background-color: #f8fafc;
+        }
+
+        .comparison-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .comp-card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            border-top: 5px solid var(--gray);
+            text-align: center;
+        }
+
+        .comp-card.highlight {
+            border-top: 5px solid var(--secondary);
+            transform: scale(1.03);
+            background: #ffffff;
+            box-shadow: 0 15px 30px rgba(15, 59, 106, 0.15);
+        }
+
+        .comp-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .comp-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .comp-card.highlight .comp-title {
+            color: var(--primary);
+            font-size: 1.25rem;
+        }
+
+        .comp-text {
+            font-size: 0.9rem;
+            color: var(--gray);
+            line-height: 1.5;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .testi-card {
+            background: white;
+            border: 1px solid var(--light-gray);
+            border-radius: var(--radius);
+            padding: 30px;
+            box-shadow: var(--shadow);
+            position: relative;
+        }
+
+        .testi-stars {
+            color: #f59e0b;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .testi-quote {
+            font-style: italic;
+            color: var(--dark);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .testi-author {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 0.9rem;
+        }
+
+        .testi-location {
+            font-size: 0.8rem;
+            color: var(--gray);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: white;
+            padding: 60px 20px 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-col h4 {
+            color: var(--secondary);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-col p, .footer-col li {
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.8;
+            list-style: none;
+        }
+
+        .footer-col a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 25px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            font-size: 0.8rem;
+            color: #94a3b8;
+        }
+
+        /* Floating WhatsApp */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 25px;
+            right: 25px;
+            background-color: #25d366;
+            color: #fff;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: transform 0.2s;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+            .comp-card.highlight {
+                transform: none;
+            }
+            nav ul {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-info">
+            <span>🚚 Frete Grátis para todo o Brasil</span>
+            <span>📱 WhatsApp: (17) 99648-2578</span>
+        </div>
+        <div>
+            <span class="top-bar-badge">Distribuidor Autorizado</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-text">KENKO <span>LIGHT</span></div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#diferenciais">Benefícios</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#institucional">A Empresa</a></li>
+                </ul>
+            </nav>
+            <a href="https://wa.me/5517996482578" class="btn-header" target="_blank">
+                <span>💬</span> Solicitar Orçamento
+            </a>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div>
+                <span class="hero-tag">25+ ANOS DE TRADIÇÃO E QUALIDADE</span>
+                <h1>Colchão Magnético Kenko Light</h1>
+                <p>Proporcione o alinhamento perfeito para sua coluna e desfrute da tecnologia em Energia Quântica e Bioquântica com o legítimo Kenko Light.</p>
+                
+                <div class="hero-features">
+                    <div class="hero-feature-item">
+                        <div class="check-icon">✓</div>
+                        <span>10 Anos de Garantia com Espuma Certificada ISO 9001</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <div class="check-icon">✓</div>
+                        <span>Certificação de Conformidade ABRACE / INMETRO</span>
+                    </div>
+                    <div class="hero-feature-item">
+                        <div class="check-icon">✓</div>
+                        <span>Parcelamento em até 10x sem Juros no Cartão de Crédito</span>
+                    </div>
+                </div>
+
+                <div class="hero-ctas">
+                    <a href="https://wa.me/5517996482578?text=Olá,%20gostaria%20de%20receber%20um%20orçamento%20do%20Colchão%20Kenko%20Light" class="btn-primary" target="_blank">
+                        Solicitar Orçamento no Whats
+                    </a>
+                    </div>
+            </div>
+
+            <div class="hero-video-box">
+                <iframe src="https://www.youtube.com/embed/oqKZIoNSbHI" title="Colchão Magnético Kenko Light" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; aspect-ratio: 16/9; border: none; display: block; border-radius: var(--radius);"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="strip">
+        <div class="strip-container">
+            <div class="strip-item">
+                <div class="strip-icon">🛡️</div>
+                <div class="strip-title">10 Anos de Garantia</div>
+                <div class="strip-desc">Espuma de alta qualidade certificada ISO 9001</div>
+            </div>
+            <div class="strip-item">
+                <div class="strip-icon">🏅</div>
+                <div class="strip-title">Selo INMETRO / ABRACE</div>
+                <div class="strip-desc">Conformidade total com as normas vigentes</div>
+            </div>
+            <div class="strip-item">
+                <div class="strip-icon">💳</div>
+                <div class="strip-title">Até 10x sem Juros</div>
+                <div class="strip-desc">Facilidade de pagamento no cartão de crédito</div>
+            </div>
+            <div class="strip-item">
+                <div class="strip-icon">🚚</div>
+                <div class="strip-title">Entrega Segura</div>
+                <div class="strip-desc">Atendimento e envio para todo o Brasil</div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="section-title">
+            <h2>Quem Usa Recomenda Kenko Light</h2>
+            <p>Assista e entenda como a tecnologia magnética transforma a saúde do seu sono.</p>
+        </div>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/Y_RsWTzsLjE" title="Quem Usa Recomenda Kenko Light" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; aspect-ratio: 16/9; border: none; display: block; border-radius: var(--radius);"></iframe>
+        </div>
+    </section>
+
+    <section id="produtos" style="background-color: #f8fafc;">
+        <div class="section-title">
+            <h2>Conheça Nossos Colchões Magnéticos</h2>
+            <p>Escolha o modelo ideal para o seu biotipo e necessidades ortopédicas.</p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="Colchão Magnético Naturale Pillow 27cm Kenko Light.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Naturale 27cm">
+                    <span class="product-badge">Mais Vendido</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Naturale Pillow 27cm</h3>
+                    <p class="product-desc">Proporciona conforto a mais para quem gosta de dormir bem com altíssima densidade equilibrada e acabamento anatômico.</p>
+                    <div class="product-specs">
+                        ✓ Altura: 27cm<br>
+                        ✓ Tecnologia Bioquântica<br>
+                        ✓ Magnetos & Infravermelho
+                    </div>
+                    <a href="https://wa.me/5517996482578?text=Quero%20saber%20mais%20sobre%20o%20Colchão%20Naturale%20Pillow%2027cm" class="btn-card" target="_blank">Consultar Preço & Orçamento</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="Colchão Magnético Sofitel Sem Pillow 25cm Kenko Light.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Sofitel 25cm">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Sofitel Sem Pillow 25cm</h3>
+                    <p class="product-desc">Possui densidade equilibrada que acomoda o corpo conforme o biotipo, alinhando a coluna e reduzindo pontos de pressão.</p>
+                    <div class="product-specs">
+                        ✓ Altura: 25cm<br>
+                        ✓ Perfilado Rabatan Terapêutico<br>
+                        ✓ Suporte Firme Ortopédico
+                    </div>
+                    <a href="https://wa.me/5517996482578?text=Quero%20saber%20mais%20sobre%20o%20Colchão%20Sofitel%2025cm" class="btn-card" target="_blank">Consultar Preço & Orçamento</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="Colchão Magnético Talismã Pillow 32cm Kenko Light.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Talismã 32cm">
+                    <span class="product-badge">Linha Nobre</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Talismã Pillow 32cm</h3>
+                    <p class="product-desc">Imponente para quem se preocupa com o visual da cama e não abre mão do ápice do conforto ortopédico magnético.</p>
+                    <div class="product-specs">
+                        ✓ Altura: 32cm<br>
+                        ✓ Pillow Top Duplo<br>
+                        ✓ Sistema Magnético Completo
+                    </div>
+                    <a href="https://wa.me/5517996482578?text=Quero%20saber%20mais%20sobre%20o%20Colchão%20Talismã%2032cm" class="btn-card" target="_blank">Consultar Preço & Orçamento</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="Colchão Magnético Vibrato 32cm Kenko Light.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Vibrato 32cm">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Colchão Vibrato 32cm</h3>
+                    <p class="product-desc">Com camadas de Rabatan de 2,1cm, Poliuretano D33 e Lâminas de Fibra Vegetal para durabilidade insuperável.</p>
+                    <div class="product-specs">
+                        ✓ Espuma D33 Certificada<br>
+                        ✓ Lâminas de Fibra Vegetal<br>
+                        ✓ Alta Durabilidade
+                    </div>
+                    <a href="https://wa.me/5517996482578?text=Quero%20saber%20mais%20sobre%20o%20Colchão%20Vibrato%2032cm" class="btn-card" target="_blank">Consultar Preço & Orçamento</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="Colchão Magnético Vibrato Kenko Millenium Pillow 36cm.png" style="width: 100%; height: 100%; object-fit: cover;" alt="Millenium 36cm">
+                    <span class="product-badge">Master Premium</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Millenium Pillow 36cm</h3>
+                    <p class="product-desc">Sua altura de 36cm dá imponência única à sua cama, entregando o máximo suporte ortopédico e relaxamento.</p>
+                    <div class="product-specs">
+                        ✓ Altura: 36cm Imponente<br>
+                        ✓ Camada de Conforto Extra<br>
+                        ✓ Terapia Magnética Integrada
+                    </div>
+                    <a href="https://wa.me/5517996482578?text=Quero%20saber%20mais%20sobre%20o%20Colchão%20Millenium%2036cm" class="btn-card" target="_blank">Consultar Preço & Orçamento</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="Colchão Magnético Vibrato Therapy Pillow 32cm Kenko Light.jpg" style="width: 100%; height: 100%; object-fit: cover;" alt="Therapy Massagem">
+                    <span class="product-badge">Com Massagem</span>
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Therapy Pillow Massagem</h3>
+                    <p class="product-desc">Alem de todos os benefícios terapêuticos do Kenko Light, conta com sistema de massagem vibroterápica com controle.</p>
+                    <div class="product-specs">
+                        ✓ Vibromassagem Multiponto<br>
+                        ✓ Controle Digital de Intensidade<br>
+                        ✓ Relaxamento Muscular Profundo
+                    </div>
+                    <a href="https://wa.me/5517996482578?text=Quero%20saber%20mais%20sobre%20o%20Colchão%20Therapy%20Massagem" class="btn-card" target="_blank">Consultar Preço & Orçamento</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-bg" id="diferenciais">
+        <div class="section-title">
+            <h2>Quais as Diferenças entre os Colchões?</h2>
+            <p>Entenda por que a escolha da tecnologia certa influencia diretamente na saúde da sua coluna.</p>
+        </div>
+
+        <div class="comparison-grid">
+            <div class="comp-card">
+                <div class="comp-icon">⚠️</div>
+                <div class="comp-title">Colchão de Mola</div>
+                <div class="comp-text">
+                    O corpo afunda de maneira desequilibrada, desviando a curvatura natural da coluna, o que pode provocar inflamações musculares e dores crônicas ao acordar.
+                </div>
+            </div>
+
+            <div class="comp-card highlight">
+                <div class="comp-icon">🌟</div>
+                <div class="comp-title">Colchão Kenko Light</div>
+                <div class="comp-text">
+                    <strong>Posiciona a coluna de forma correta</strong>, auxiliando a circulação sanguínea, fortalecendo os ossos e proporcionando um sono profundo de alta qualidade.
+                </div>
+            </div>
+
+            <div class="comp-card">
+                <div class="comp-icon">⚠️</div>
+                <div class="comp-title">Colchão de Espuma Comum</div>
+                <div class="comp-text">
+                    Pode pressionar pontos de apoio do corpo de forma rígida, deformando a coluna com o tempo, prejudicando a circulação e aumentando risco de hérnias.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <div class="section-title">
+            <h2>Depoimentos de Clientes</h2>
+            <p>A satisfação de quem transformou as noites de sono com a Kenko Light.</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-quote">
+                    "Primeiramente, o pedido chegou antes do prazo. O atendimento via site e WhatsApp com a equipe foi tranquilo e eficiente. O produto é fiel às imagens, excelente acabamento, muito satisfeito!"
+                </div>
+                <div class="testi-author">Thiago Moreira & Talita A. Moreira</div>
+                <div class="testi-location">Florianópolis – SC</div>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-quote">
+                    "Minhas dores nas costas reduziram dramaticamente após 2 semanas de uso. O colchão ortopédico tem o suporte perfeito na medida certa. Recomendaria de olhos fechados!"
+                </div>
+                <div class="testi-author">Carlos Eduardo S.</div>
+                <div class="testi-location">Curitiba – PR</div>
+            </div>
+
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <div class="testi-quote">
+                    "Comprei o modelo Vibrato com massagem. Dormir nele é uma experiência revigorante. Atendimento impecável do distribuidor autorizado."
+                </div>
+                <div class="testi-author">Maria Helena R.</div>
+                <div class="testi-location">São Paulo – SP</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="institucional" style="background-color: #f1f5f9;">
+        <div class="section-title">
+            <h2>Kenko Light Fernandópolis/SP</h2>
+            <p>Conheça a história e estrutura da marca referência em colchões magnéticos.</p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto; text-align: center; font-size: 1.05rem; line-height: 1.8; color: var(--dark);">
+            <p style="margin-bottom: 20px;">
+                Em setembro de 1992 nascia formalmente a <strong>KENKO LIGHT</strong>. Mantendo o compromisso de honestidade e transparência com o cliente, a pequena empresa cresceu de forma sólida ao longo das décadas.
+            </p>
+            <p style="margin-bottom: 30px;">
+                Hoje, contamos com uma estrutura fabril com mais de <strong>5.000 m²</strong> e uma equipe dedicada de mais de 80 colaboradores qualificados, desenvolvendo produtos de altíssima tecnologia ortopédica e magnética.
+            </p>
+            <a href="https://wa.me/5517996482578" class="btn-primary" target="_blank">Falar com um Consultor Autorizado</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Kenko Light Fernandópolis/SP</h4>
+                <p>Distribuidor Autorizado das linhas de colchões magnéticos e estofados Kenko Light Brasil.</p>
+                <p style="margin-top: 15px;">Certificação INMETRO / ABRACE e ISO 9001.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#produtos">Colchões Magnéticos</a></li>
+                    <li><a href="#diferenciais">Diferenciais e Saúde</a></li>
+                    <li><a href="#depoimentos">Depoimentos de Clientes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atendimento & Vendas</h4>
+                <p>📍 Fernandópolis - SP</p>
+                <p>📱 WhatsApp: (17) 99648-2578</p>
+                <p>⏰ Seg. a Sex. das 08h às 18h</p>
+            </div>
